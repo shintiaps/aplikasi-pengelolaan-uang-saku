@@ -33,9 +33,13 @@ def tambah_pengeluaran():
     print(f"Pengeluaran sebesar Rp{jumlah:.2f} berhasil dikurangkan. Saldo sekarang: Rp{saldo:.2f}")
 
 def lihat_saldo():
-    pass
+    global saldo
+    # Menampilkan saldo saat ini dengan format ribuan dan 2 desimal
+    print("=== Saldo Saat Ini ===")
+    print(f"Saldo: Rp{saldo:,.2f}")
+    print("======================")
 
-def menu():
+def menu():"}```
     print("=== Aplikasi Pengelola Uang Saku ===")
     print("1. Tambah pemasukan")
     print("2. Tambah pengeluaran")
