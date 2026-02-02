@@ -15,7 +15,22 @@ def tambah_pemasukan():
     print(f"Pemasukan sebesar Rp{jumlah:.2f} berhasil ditambahkan. Saldo sekarang: Rp{saldo:.2f}")
 
 def tambah_pengeluaran():
-    pass
+    global saldo
+    try:
+        jumlah = float(input("Masukkan jumlah pengeluaran: "))
+        if jumlah <= 0:
+            print("Jumlah harus lebih dari 0")
+            return
+    except ValueError:
+        print("Input tidak valid. Masukkan angka.")
+        return
+
+    if jumlah > saldo:
+        print("Saldo tidak cukup. Transaksi dibatalkan.")
+        return
+
+    saldo -= jumlah
+    print(f"Pengeluaran sebesar Rp{jumlah:.2f} berhasil dikurangkan. Saldo sekarang: Rp{saldo:.2f}")
 
 def lihat_saldo():
     pass
