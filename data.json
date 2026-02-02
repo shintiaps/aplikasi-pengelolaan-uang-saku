@@ -1,0 +1,15 @@
+{
+  "saldo": 2.0,
+  "transactions": [
+    {
+      "type": "pemasukan",
+      "amount": 1.0,
+      "time": "2026-02-02T06:29:38.598589"
+    },
+    {
+      "type": "pemasukan",
+      "amount": 1.0,
+      "time": "2026-02-02T06:29:49.598449"
+    }
+  ]
+}
